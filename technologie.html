@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DFDS Stories - Technologie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/storieslogo.jpg" alt="DFDS stories logo">
+        </a>
+        <a class="inloggen" href="inloggen.html">Inloggen</a>
+        <input id="search" type="text" name="search" placeholder="Zoek verhaal...">
+        <img class="zoekknop" src="images/searchicon-01.png" alt="zoek icon">
+        <a href="inloggen.html">
+        <img class="inloggenknop" src="images/accounticon-01.png" alt="account icon">
+        </a>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li><a href="literatuur.html">Literatuur</a></li>
+                <li><a href="maatschappij.html">Maatschappij</a></li>
+                <li><a href="sport.html">Sport</a></li>
+                <li><a href="beroemdheden.html">Beroemdheden</a></li>
+                <li><a href="technologie.html">Technologie</a></li>
+                <li><a href="humor.html">Humor</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="overig.html">Overig</a></li>
+            </ul>
+        </nav>
+        <img src="images/technologieheader.png" alt="technologie banner">
+        <img class="desktopbanner" src="images/technologieheader2.png" alt="technologie banner">
+
+        <div class="dropdownmenus">
+           <div class="checkboxAccordion">
+                <input type="checkbox" id="sliderToggle" class="sliderCheckbox">
+                <label for="sliderToggle" class="accordion"><span class="caret"></span>Categorie...</label>
+
+                <div class="menu-1">
+                  <ul>
+                        <li><a href="literatuur.html">Literatuur</a></li>
+                        <li><a href="maatschappij.html">Maatschappij</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="beroemdheden.html">Beroemdheden</a></li>
+                        <li><a href="technologie.html">Technologie</a></li>
+                        <li><a href="humor.html">Humor</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="overig.html">Overig</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="checkboxAccordion">
+                <input type="checkbox" id="sortSlider" class="sliderCheckbox">
+                <label for="sortSlider" class="accordion"><span class="caret"></span>Sorteer...</label>
+
+                <div class="menu-1">
+                  <ul>
+                       <li><a href="technologieVeel.html">Aantal woorden (meeste eerst)</a></li>
+                 <li><a href="technologieWeinig.html">Aantal woorden (minste eerst)</a></li>
+                  <li><a href="technologieHoogstBeoordeeld.html">Hoogst beoordeeld</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--               Bron accordion:    https://codepen.io/meesrutten/pen/mAvrrO-->
+        
+        <div class="artikelen">
+
+            <article>
+                  <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">23</p>
+                </div>
+                <h1>Code</h1>
+                <footer>
+                    <p>716 woorden</p>
+                </footer>
+                <p>In kwellende situaties toveren apen pennenvruchten uit invloedrijke tapijthandelaren. De engelen buigen uitermate succesvol en negeren langzaam onze overrijpe politieke [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+            
+              <article>
+                  <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">7</p>
+                </div>
+                <h1>Enigszins aan de omslachtige kant</h1>
+                <footer>
+                    <p>888 woorden</p>
+                </footer>
+                <p>Een autobus, eigendom van het Amsterdamse Gemeentevervoersbedrijf (hierna te noemen: GVB), zet mij en mijn gewaardeerde zoon, die zojuist in zijn gifgroene kinderwagen van het [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+            
+            <article>
+                <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">86</p>
+                </div>
+                <h1>iPhone</h1>
+                <footer>
+                    <p>276 woorden</p>
+                </footer>
+                <p>Om een uur of 12 stapte ik op CS bus 21 uit omdat ik naar de Openbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek. Kutweer dat het was. [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bottomPage">
+        <p>&#169; DFDS 2016</p>
+    </footer>
+    
+      <script src="js/script.js"></script>
+      
+</body>
+
+</html>

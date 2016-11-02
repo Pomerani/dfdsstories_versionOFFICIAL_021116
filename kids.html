@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DFDS Stories - Kids</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/storieslogo.jpg" alt="DFDS stories logo">
+        </a>
+        <a class="inloggen" href="inloggen.html">Inloggen</a>
+        <input id="search" type="text" name="search" placeholder="Zoek verhaal...">
+        <img class="zoekknop" src="images/searchicon-01.png" alt="zoek icon">
+        <a href="inloggen.html">
+        <img class="inloggenknop" src="images/accounticon-01.png" alt="account icon">
+        </a>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li><a href="literatuur.html">Literatuur</a></li>
+                <li><a href="maatschappij.html">Maatschappij</a></li>
+                <li><a href="sport.html">Sport</a></li>
+                <li><a href="beroemdheden.html">Beroemdheden</a></li>
+                <li><a href="technologie.html">Technologie</a></li>
+                <li><a href="humor.html">Humor</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="overig.html">Overig</a></li>
+            </ul>
+        </nav>
+        <img src="images/kidsheader.png" alt="kids banner">
+        <img class="desktopbanner" src="images/kidsheader2.png" alt="kids banner">
+
+        <div class="dropdownmenus">
+         <div class="checkboxAccordion">
+                <input type="checkbox" id="sliderToggle" class="sliderCheckbox">
+                <label for="sliderToggle" class="accordion"><span class="caret"></span>Categorie...</label>
+
+                <div class="menu-1">
+                  <ul>
+                        <li><a href="literatuur.html">Literatuur</a></li>
+                        <li><a href="maatschappij.html">Maatschappij</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="beroemdheden.html">Beroemdheden</a></li>
+                        <li><a href="technologie.html">Technologie</a></li>
+                        <li><a href="humor.html">Humor</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="overig.html">Overig</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+             <div class="checkboxAccordion">
+                <input type="checkbox" id="sortSlider" class="sliderCheckbox">
+                <label for="sortSlider" class="accordion"><span class="caret"></span>Sorteer...</label>
+
+                <div class="menu-1">
+                  <ul>
+                       <li><a href="kidsVeel.html">Aantal woorden (meeste eerst)</a></li>
+                 <li><a href="kidsWeinig.html">Aantal woorden (minste eerst)</a></li>
+                  <li><a href="kidsHoogstBeoordeeld.html">Hoogst beoordeeld</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!--               Bron accordion:    https://codepen.io/meesrutten/pen/mAvrrO-->
+        
+        <div class="artikelen">
+            <article>
+                  <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">28</p>
+                </div>
+                <h1>Kinderboek</h1>
+                <footer>
+                    <p>711 woorden</p>
+                </footer>
+                <p>Kijk, daar gaat Max. Dag Max! Hij stapt uit de bus. Wat duwt hij daar vooruit? Jawel, een heuse kinderwagen! En wat voor één! Een groene! Zijn zoontje ligt er in te slapen. [...]</p>
+            <button class="leesknop" type="button"><a href="kinderboek.html">Lees verder</a></button>
+            </article>
+            
+               <article>
+                  <div class="likes">
+                    <img src="images//heartempty-01.png" alt="hart">
+                    <p class="likesNumber">1</p>
+                </div>
+                <h1>Kinderliedje</h1>
+                <footer>
+                    <p>226 woorden</p>
+                </footer>
+                <p>Molovichje ging op reis, tiereliereliere
+Molovichje ging op reis, tierelierelom Met z’n zoontje in de kar, tiereliereliere Met z’n zoontje in de kar, tierelierelom Hij ging naar de bieb toe [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+            
+            <article>
+                <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">12</p>
+                </div>
+                <h1>Onomatopee</h1>
+                <footer>
+                    <p>545 woorden</p>
+                </footer>
+                <p>De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren. Ik stap-stap-stap uit de bus en push oef-oef de kinderwagen voort waarvan [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+            
+            <article>
+                <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">6</p>
+                </div>
+                <h1>Regenboog</h1>
+                <footer>
+                    <p>274 woorden</p>
+                </footer>
+                <p>Bus 21. Ik stap uit. Het is een gure dag, geen ultraviolette zonnestralen die het tere huidje van mijn zoontje aantasten. Hij ligt te slapen in z’n paarse kinderwagen. De reizigers lopen van [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bottomPage">
+        <p>&#169; DFDS 2016</p>
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

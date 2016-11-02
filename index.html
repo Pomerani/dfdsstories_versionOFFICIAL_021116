@@ -1,0 +1,145 @@
+<!--
+=======================================================================================
+
+BRONNEN
+
+=======================================================================================
+
+Accordion: https://codepen.io/meesrutten/pen/mAvrrO, door Mees Rutten
+Hulp van: Sybille Mulder, Servin Nissen. Mohammed, Tobias
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DFDS Stories</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/storieslogo.jpg" alt="DFDS stories logo">
+        </a>
+        <a class="inloggen" href="inloggen.html">Inloggen</a>
+        <input id="search" type="text" name="search" placeholder="Zoek verhaal...">
+        <img class="zoekknop" src="images/searchicon-01.png" alt="zoek icon">
+        <a href="inloggen.html">
+        <img class="inloggenknop" src="images/accounticon-01.png" alt="account icon">
+        </a>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li><a href="literatuur.html">Literatuur</a></li>
+                <li><a href="maatschappij.html">Maatschappij</a></li>
+                <li><a href="sport.html">Sport</a></li>
+                <li><a href="beroemdheden.html">Beroemdheden</a></li>
+                <li><a href="technologie.html">Technologie</a></li>
+                <li><a href="humor.html">Humor</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="overig.html">Overig</a></li>
+            </ul>
+        </nav>
+        
+        <img src="images/homeheader2.png" alt="DFDS Stories banner">
+        <img class="desktopbanner" src="images/homeheader.png" alt="DFDS Stories banner">
+
+        <div class="dropdownmenus">
+         <div class="checkboxAccordion">
+                <input type="checkbox" id="sliderToggle" class="sliderCheckbox">
+                <label for="sliderToggle" class="accordion"><span class="caret"></span>Categorie...</label>
+
+                <div class="menu-1">
+                  <ul>
+                        <li><a href="literatuur.html">Literatuur</a></li>
+                        <li><a href="maatschappij.html">Maatschappij</a></li>
+                        <li><a href="sport.html">Sport</a></li>
+                        <li><a href="beroemdheden.html">Beroemdheden</a></li>
+                        <li><a href="technologie.html">Technologie</a></li>
+                        <li><a href="humor.html">Humor</a></li>
+                        <li><a href="kids.html">Kids</a></li>
+                        <li><a href="overig.html">Overig</a></li>
+                    </ul>
+                </div>
+            </div>
+                   </div>
+                   
+<!--               Bron accordion:    https://codepen.io/meesrutten/pen/mAvrrO-->
+        
+        <section>
+        <h1 class="welkomtekst">Welkom op onze verhalenwebsite</h1>
+        <p>Tijdens je reis zou je graag iets willen doen om de tijd te doen vergeten. 99 dezelfde verhalen, elk in een andere sfeer en emotie. Sla je leukste verhalen op in de leeslijst voor offline gebruik en like je favoriete verhalen. DFDS Stories is helemaal gratis.</p>
+        </section>
+        
+        <section class="handleiding">
+            <div><img src="images/mockup1.jpg" alt="">
+                <p>Alle verhalen zijn gecategoriseerd in onderwerpen. Zo wordt het heel makkelijk om een verhaal te vinden die jij leuk vindt.</p></div>
+                
+            <div><img src="images/mockup2.jpg" alt="">
+                <p>Elk verhaal is uniek vormgegeven voor de ultieme leeservaring.</p></div>
+                
+            <div><img src="images/mockup3.jpg" alt="">
+                <p>Sla je verhalen op in de leeslijst om ook offline jouw favoriete verhalen overal en altijd te lezen.</p></div>
+            
+        </section>
+        
+        <div class="artikelen">
+            <article>
+                  <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">272</p>
+                </div>
+                <h1>Zombie</h1>
+                <footer>
+                    <p>847 woorden</p>
+                </footer>
+                <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees. Het is gekkenwerk dat ik hier ben [...]</p>
+            <button class="leesknop" type="button"><a href="zombie.html">Lees verder</a></button>
+            </article>
+
+            <article>
+                  <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">163</p>
+                </div>
+                <h1>Frans</h1>
+                <footer>
+                    <p>387 woorden</p>
+                </footer>
+                <p>Le premier fevrièr 2011. Presque midi. Le bus s’arrête. Ligne 21. Place de Gare Centrale. Je marche au derrière d’un poussette. Mon fils dort. Je suis en route au Bibliothèque Public [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+            
+             <article>
+                <div class="likes">
+                    <img src="images/heartempty-01.png" alt="hart">
+                    <p class="likesNumber">86</p>
+                </div>
+                <h1>iPhone</h1>
+                <footer>
+                    <p>276 woorden</p>
+                </footer>
+                <p>Om een uur of 12 stapte ik op CS bus 21 uit omdat ik naar de Openbare Bibliotheek op weg was, waar ik Stijloefeningen van Q-No wilde lenen. Was ik al een tijdje naar op zoek. Kutweer dat het was. [...]</p>
+            <button class="leesknop" type="button">Lees verder</button>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="bottomPage">
+        <p>&#169; DFDS 2016</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>

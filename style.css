@@ -1,0 +1,979 @@
+/*
+=======================================================================================
+    Lettertypen
+=======================================================================================
+*/
+
+@font-face {
+  font-family: 'Klavika';
+  src: url('../fonts/KlavikaBold-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/KlavikaBold-Bold.otf')  format('opentype'),
+	     url('../fonts/KlavikaBold-Bold.woff') format('woff'), url('../fonts/KlavikaBold-Bold.ttf')  format('truetype'), url('../fonts/KlavikaBold-Bold.svg#KlavikaBold-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+    
+   @font-face { 
+  font-family: 'Klavika';
+  src: url('../fonts/KlavikaLight-TF.eot?#iefix') format('embedded-opentype'),  url('../fonts/KlavikaLight-TF.otf')  format('opentype'),
+	     url('../fonts/KlavikaLight-TF.woff') format('woff'), url('../fonts/KlavikaLight-TF.ttf')  format('truetype'), url('../fonts/KlavikaLight-TF.svg#KlavikaLight-TF') format('svg');
+  font-weight: light;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf')  format('truetype'), url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+=======================================================================================
+    Algemeen
+=======================================================================================
+*/
+
+body {
+    font-family: "Segoe UI";
+    background-color: #eaeded;
+    margin: 0;
+    padding: 0;
+    cursor: url(../images/cursor1.png), auto;
+}
+
+header {
+    background-color: #ffffff;
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+header a img {
+    height: 2.5em;
+    padding-top: 1.2em;
+    padding-left: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+header > img {
+    height: 2em;
+    padding-top: 1.25em;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    float: right;
+}
+
+nav ul {
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 3em 0 0 0;
+    overflow: hidden;
+    display: none;
+}
+
+
+nav li {
+    float: left;
+    display: none;
+}
+    
+
+nav li a {
+    font-family: "Klavika";
+    font-size: 1em;
+    font-weight: normal;
+    color: #000;
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+.inloggen {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    text-decoration: none;
+    color: #bababa;
+    margin: 1em 0 1em 0;
+    display: none;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+.inloggenknop {
+    height: 2em;
+    padding-top: 1.25em;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    position: relative;
+    float: right;
+}
+
+#search {
+    display: block;
+    float: right;
+    background: #fff url(../images/searchicon-03.png) no-repeat center;
+    background-position: 1em 0.5em;
+    border-style: none;
+    padding-left: 3.5em;
+    margin-top: 1em;
+    margin-right: 1.5em;
+    width: 1em;
+     -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#search:focus {
+     width: 25%;
+}
+
+.zoekknop {
+    display: none;
+}
+
+/*
+=======================================================================================
+    Overzichtspagina Home
+=======================================================================================
+*/
+
+section {
+    background-color: #fff;
+    min-width: 12em;
+    max-width: 42em;
+    padding: 1em 2em 1em 3em;
+    margin: 1em 1.5em 3em 1.5em;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section div p {
+    text-align: center;
+    width: 80%;
+    padding: 0 2em;
+    margin-bottom: 5em;
+}
+
+.welkomtekst {
+    font-family: "Klavika";
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+}
+
+/*
+=======================================================================================
+    Overzichtspagina Home Breakpoint - Tablet
+=======================================================================================
+*/
+
+@media (min-width:48em){
+    section {
+        min-width: 12em;
+        max-width: 54em;
+        padding: 1em 2em 2em 3em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+@media (min-width:48em){
+    .handleiding {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 3em 2.5em 0 2.5em;
+        
+    }
+}
+        
+@media (min-width:48em){
+    section div img {
+        flex: 1 1 auto;
+        width: 12em;
+        height: 12em;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2em;
+    }
+}
+
+/*
+=======================================================================================
+    Overzichtspagina Home Breakpoint - Desktop
+=======================================================================================
+*/
+
+@media (min-width:75em){
+    section {
+        min-width: 12em;
+        max-width: 70em;
+        padding: 1em 2em 6em 3em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+@media (min-width:75em){
+    section div img {
+        width: 17em;
+        height: 17em;
+    }
+}
+
+/*
+=======================================================================================
+    Overzichtspagina Categorie
+=======================================================================================
+*/
+            
+main > h1 {
+    color: #fff;
+    font-size: 2.75em;
+    position: absolute;
+    margin: 11em 0 5em 15.75em;
+    z-index: 2;
+}
+
+main > img {
+    margin: 5em 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.desktopbanner {
+    margin: 5em 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+article {
+     background-color: #fff;
+        min-width: 12em;
+    max-width: 42em;
+    padding: 1em 2em 6em 3em;
+    margin: 1em 1.5em 4em 1.5em;
+}
+
+article button {
+    color: #fff;
+    font-family: "Klavika";
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #102b42;
+    padding: 0.75em 1.5em;
+    float: right;
+    transition: all 0.5s ease;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+article button:hover {
+    background-color: #5b8cab;
+}
+
+article button a {
+     color: #fff;
+    font-family: "Klavika";
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: #102b42;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+article h1 {
+    font-family: "Klavika";
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-top:0.3em;
+}
+
+article footer {
+    font-size: 1em;
+}
+
+article p {
+    color: #4c4c4c;
+    font-size: 1em;
+}
+
+article img {
+    height: 1.25em;
+    width: auto;
+    display: inline;
+}
+
+footer p {
+    color: #000;
+}
+
+ul li, div li {   
+    font-family: "Segoe UI";
+    font-size: 1em;
+    font-weight: normal;
+    color: #000;
+    padding: 0 1em;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+ li a {   
+     font-family: "Segoe UI";
+    font-size: 1em;
+    font-weight: normal;
+    color: #000;
+    padding: 0 1em;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+     cursor: url(../images/cursor2.png), pointer;
+}   
+
+.checkboxAccordion{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.dropdownmenus input[type="checkbox"] {
+  display: none;
+}
+
+.dropdownmenus .accordion + div {
+  display: block;
+  margin: -5em;
+   padding: 0;
+   height: 0;
+  visibility: hidden;
+}
+
+.sliderCheckbox:checked + .accordion + div {
+    background-color: #fff;
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  border: outset 0.05em;
+  border-top: none;
+  padding: calc(3em - 1px);
+  visibility: initial;
+  transition: all .3s ease;
+}
+.accordion + div ul {
+    margin:-1.5em;
+    padding: 0;
+}
+
+.dropdownmenus .caret {
+  display: inline-block;
+  border-left: 0.1em solid #000;
+  border-bottom: 0.1em solid #000;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 0.25em;
+  height: 0.25em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+  transition: all 300ms ease-in;
+  transform: rotate(-135deg) translateY(-30%);
+}
+.dropdownmenus .caret:hover ~ .accordion {
+  box-shadow: 0.125em 0.125em 0.25em 0 #c2c2c2;
+  border: none;
+}
+
+.dropdownmenus .sliderCheckbox:checked + .accordion .caret {
+  transform: rotate(-45deg);
+}
+
+.dropdownmenus .accordion {
+    border: outset 0.05em;
+  display: inline-block;
+  padding: 1em 1.3em;
+  margin-bottom: 0;
+  width: auto%;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 1.25em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: url(../images/cursor2.png), pointer;
+}
+.dropdownmenus .accordion:hover {
+  box-shadow: 0.0625em 0.0625em 0.1875em 0 #333;
+  border: none;
+}
+
+.dropdownmenus {
+    text-align: center;
+    margin: 1em 0 0 0;
+}
+
+.categorie {
+    float: left;
+}
+
+.sorteer {
+    float: right;
+}
+
+.likes {
+    float: right;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+.likesNumber {
+    font-size: 1.3em;
+    display: inline-block;
+}
+
+.bottomPage {
+   font-family: "Segoe UI";
+     font-size: 0.8em;
+    text-align: center;
+}
+
+article div {
+    float: right;
+}
+
+/*
+=======================================================================================
+    Overzichtspagina Categorie Breakpoint - Tablet
+=======================================================================================
+*/
+
+@media (min-width:48em) {
+    header a img {
+    height: 2.25em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+}
+
+@media (min-width:48em){
+    header {
+    background-color: #ffffff;
+    height: 3.5em;
+        width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}   
+}
+
+@media (min-width:48em){
+    header > img {
+    height: 1.25em;
+    padding-top: 1.25em;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    float: right;
+    }
+}
+
+@media (min-width:48em){
+    nav ul {
+        background-color: #fff;
+        list-style-type: none;
+        padding: 0;
+        margin: 3em 0 0 0;
+        overflow: hidden;
+        display: block;
+}
+}
+
+@media (min-width:48em){
+    nav li {
+        float: left;
+        display: block;
+}
+}
+
+@media (min-width:48em){
+nav li a {
+    font-family: "Klavika";
+    font-size: 1em;
+    font-weight: normal;
+    color: #000;
+    padding: 1em 0.05em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+}
+
+@media (min-width:48em){
+nav li a:hover {
+    background-color: #edf4fb;
+    color: #102b42;
+}
+}
+
+@media (min-width:48em){
+main > img {
+    margin: 0 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+}
+
+@media (min-width:48em) {
+    .inloggen {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    text-decoration: none;
+    margin: 1.2em 1.5em 1em 0;
+    display: inline-block;
+    float: right;
+}
+}
+
+@media (min-width:48em) {
+    .inloggen:hover {
+        color: #102b42;
+    }
+}
+
+@media (min-width:48em){
+#search {
+    display: block;
+    float: right;
+    background: #fff url(../images/searchicon-02.png) no-repeat center;
+    background-position: 1em 0.5em;
+    border-style: none;
+    padding-left: 3.5em;
+    margin-top: 1em;
+    margin-right: 1.5em;
+    width: 1em;
+     -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+}
+
+@media (min-width:48em){
+#search:focus {
+     width: 20%;
+}
+}
+
+@media (min-width:48em){
+    .desktopbanner {
+    margin: 5em 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+}
+    
+
+@media (min-width:48em){
+.desktopbanner {
+    margin: 5em 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+}
+
+@media (min-width:48em){
+.checkboxAccordion:first-child {
+    display: none;
+}
+}
+
+@media (min-width:48em){
+    .checkboxAccordion:nth-child(2) {
+        margin-bottom: 5em;
+    }
+}
+
+@media (min-width:48em){
+.dropdownmenus .accordion {
+    padding: 1em 5em;
+}
+}
+
+@media (min-width:48em){
+    article {
+    background-color: #fff;
+        min-width: 16em;
+        max-width: 18em;
+    padding: 1em 2em 6em 3em;
+    margin: 1em 1.5em 3em 1.5em;
+            display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        position: relative;
+}
+}
+@media (min-width:48em){
+    .likes{
+        position: absolute;
+        right: 2em; 
+        margin-top: 0.2em;
+    }
+}
+
+@media (min-width:48em){
+    article h1::before{
+        content: "";
+        display: inline-block;
+        float: right;
+        width: 0.5em;
+        height: 2em;
+    }
+}
+
+@media (min-width:48em) {
+article img {
+    height: 1.25em;
+    width: auto;
+    display: inline;
+}
+}
+
+@media (min-width:48em) {
+.inloggenknop {
+    display: none;
+}
+}
+
+@media (min-width:48em) {
+.artikelen {
+        display: flex;
+        flex: 1 1 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+}
+
+/*
+=======================================================================================
+    Overzichtspagina Categorie Breakpoint - Desktop
+=======================================================================================
+*/
+
+@media (min-width:75em) {
+    header a img {
+    height: 2.25em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+}
+
+@media (min-width:75em){
+main > img {
+    margin: 0 0 0 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+}
+
+@media (min-width:75em){
+    .desktopbanner {
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+}
+}
+
+@media (min-width:75em){
+nav li a {
+    font-family: "Klavika";
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #000;
+    padding: 1em 1.1em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+}
+
+@media (min-width:75em){
+    .artikelen {
+        white-space: normal;
+        justify-content: center;
+    }
+}
+
+@media (min-width:75em){
+.dropdownmenus .accordion {
+    padding: 1em 7em;
+}
+}
+
+/*
+=======================================================================================
+    Aanmeldpagina + Inlogpagina
+=======================================================================================
+*/
+
+.aanmeldpagina {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/aanmeldpaginabg.jpg);
+    background-repeat: no-repeat;
+    cursor: url(../images/cursor1.png), auto;
+}
+
+.terug {
+    font-family: "Segoe UI";
+    color: #bababa;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 1.8em 1.5em 1em 0;
+    display: inline-block;
+    float: right;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+.terug:hover {
+    color: #102b42;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1em 1em;
+    font-family: "Klavika";
+    width: 85%;
+    max-width: 40em;
+    margin: 8em auto;
+    margin-bottom: -0.2em;
+}
+
+form a {
+    color: #c97022;
+    display: block;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2em;
+}
+
+legend {
+    font-size: 2em;
+    margin-bottom: 0.75em;
+}
+
+input {
+    font-family: "Segoe UI";
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 0.6em 0.9em;
+    margin: 0.5em 0;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 3px solid #f08425;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 0.6em 0.9em;
+    margin: 0.5em 0;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+
+input[type=number]:focus {
+    outline: none;
+    border: 3px solid #f08425;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 0.6em 0.9em;
+    margin: 0.5em 0;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+
+input[type=email]:focus {
+    outline: none;
+    border: 3px solid #f08425;
+}
+
+.aanmeldformulier input:focus:valid, .aanmeldformulier textarea:focus:valid {
+    background: #fff url(../images/formvalid-01.png) no-repeat 98% center;
+    border-color: #99c87f;
+}
+
+.aanmeldformulier input:focus:invalid, .aanmeldformulier textarea:focus:invalid {
+    background: #fff url(../images/forminvalid-01.png) no-repeat 98% center;
+    border-color: #ff0000;
+}
+    
+
+#registreerknop {
+    font-family: "Klavika";
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #99c87f;
+    border: none;
+    color: #fff;
+    display: block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    cursor: url(../images/cursor2.png), pointer;
+}
+
+#registreerknop:hover {
+    background-color: #67a344;
+}
+
+.registreerFooter {
+    font-family: "Segoe UI";
+    font-size: 0.8em;
+    color: #fff;
+    text-align: center;
+}
+
+/*
+=======================================================================================
+    Aanmeldpagina + Inlogpagina Breakpoint - Tablet
+=======================================================================================
+*/
+
+@media (min-width:48em) {
+.terug {
+    margin: 1.2em 1.5em 1em 0;
+}
+}
+
+/*
+=======================================================================================
+    Verhaal
+=======================================================================================
+*/
+
+.detailVerhaalMobiel {
+    width: 100%;
+    display: inline-block;
+}
+
+.detailVerhaalTablet {
+    display: none;
+}
+
+.detailVerhaalDesktop {
+    display: none;
+}
+
+/*
+=======================================================================================
+    Verhaal Breakpoint - Tablet
+=======================================================================================
+*/
+
+@media (min-width:48em) {
+    .detailVerhaalMobiel {
+    display: none;
+}
+
+
+@media (min-width:48em) {
+    .detailVerhaalTablet {
+        width: 100%;
+        display: inline-block;
+    }
+}
+    
+    @media (min-width:48em) {
+    .detailVerhaalDesktop {
+    display: none;
+}
+    }
+    
+/*
+=======================================================================================
+    Verhaal Breakpoint - Desktop
+=======================================================================================
+*/
+    
+@media (min-width:75em) {
+    .detailVerhaalMobiel {
+    display: none;
+}
+
+
+@media (min-width:75em) {
+    .detailVerhaalTablet {
+        display: none;
+    }
+}
+    
+    @media (min-width:75em) {
+    .detailVerhaalDesktop {
+        width: 100%;
+    display: inline-block;
+}
+    }
